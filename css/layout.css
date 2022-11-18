@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* reset */
+a { text-decoration: none; color: inherit;}
+body {font: normal 12px/1.5em "Noto Serif KR",sans-serif; background: url('../images/cam_bg.jpg') repeat-x left top;}
+
+/* font */
+@font-face{
+    font-family:Noto Serif KR;
+    src:local("Noto Serif KR"),
+        url(../font/NotoSerif/AnyConv.com__NotoSerifKR-Regular.eot),
+        url(../font/NotoSerif/NotoSerifKR-Regular.woff) format("woff"),
+        url(../font/NotoSerif/AnyConv.com__NotoSerifKR-Regular.ttf) format("truetype");
+}
+
+
+/* wrap */
+#wrap { width: 1450px; margin: 10px auto 0;}
+.quick {text-align: right; margin-top: 10px;}
+.quick li { display: inline; margin-right: 20px;}
+
+#top {width: 1450px; overflow: hidden;}
+
+#top h1 { text-align: center; margin-top: 20px;margin-bottom: 40px;}
+
+#gnb {background: url("../images/index/bar.png"); width: 1450px; height: 60px; float: left; margin: 0 auto;}
+#gnb ul { margin-left: 425px;}
+#gnb .sub { display: none;}/* 2단 숨김 */
+#gnb > ul > li { width: 200px; height: 60px; float: left; text-align: center; color: #fff; line-height:57px; position: relative;}/* 1단 li에만 적용 */
+#gnb ul li a { font-size: 17px;  }
+#gnb ul li:hover a { color: rgb(168, 165, 165);}
+#gnb ul li:hover .sub { display: block; position: absolute; padding-top: 0px; background-color: rgba(255,255,255,0.7);}
+
+#gnb ul li .sub1 { width: 510px; left: -350px; }
+#gnb ul li .sub2 {width: 215px; left: -360px;}
+#gnb ul li .sub li {float: left;}/* 2단 수평배치 */
+#gnb ul li .sub li a { font-size: 17px; font-weight: normal;margin-left: 10px; padding: 0 23px; color: #000;}/* 2단 글꼴 */
+#gnb ul li .sub li:hover a {color: rgb(161, 73, 73); font-weight:bold ; text-decoration: underline;}
+
+
+.main_img { width: 1450px; height: 707px;display: flex; cursor: pointer;}
+
+#txt1 { text-align: center; padding-top: 200px;}
+#txt1 h2 {font-size: 36px;}
+#txt1 ul {padding-top: 50px; line-height: 2.7em; }
+#txt1 ul li {font-size: 24px; margin-top: 15px; }
+#txt1 .txt_1 {font-size: 20px; padding-top: 40px; padding-bottom: 200px;}
+
+/* #img_br*/
+#img_br img {padding-bottom: 200px;}
+
+/* every_wrap */
+#container {width: 1450px;height: 380px; margin: 20px auto;/* 상하좌우 */margin-bottom: 100px;}
+.con_left {margin-left: 50px; width: 1000px; height: 150px;} /* float부모 */
+.con_left > p{float: left; }/*float 대상(왼쪽)*/
+#container p a:hover img { filter: brightness(80%); }
+.con_left dl{ float: left; margin-left: 50px; margin-top:150px; line-height: 3.5em;}/*float 대상(오른쪽)*/
+.con_left dl dt { font-weight: bold; font-size: 20px;line-height: 2em;margin-bottom: 15px;}
+.con_left dl dd {font-size: 20px; color: #666;}
+
+
+/* box */
+#box {clear: both;text-align: center; background-color: rgb(225, 225, 225); width: 1450px; height: 500px;}
+#box p {padding-top: 70px; margin: 0 100px;}
+#box ul {font-size: 20px; line-height: 60px;padding-top: 50px; letter-spacing: 0.2em;}
+.txt2 {font-size: 15px ; line-height: 50px; color: firebrick; font-weight: bold; }
+
+
+
+#container2 {width: 1450px; height: 380px; margin: 20px auto;/* 상하좌우 */ margin-top: 100px; }
+.con_right {margin-left: 50px; width: 1350px; height: 150px;} /* float부모 */
+.con_right > p{float: right; }/*float 대상(왼쪽)*/
+#container2 p a:hover img { filter: brightness(80%); }
+.con_right dl{ float: right; margin-right: 50px; margin-top:150px; line-height: 3.5em; text-align: right;}/*float 대상(오른쪽)*/
+.con_right dl dt { font-weight: bold; font-size: 20px;line-height: 2em;margin-bottom: 15px;}
+.con_right dl dd {font-size: 20px; color: #666;}
+
+
+/* img */
+#img0 img {padding-top: 200px; }
+
+
+
+
+/* footer */
+#bottom {text-align: center; padding-top: 300px;}
+#bottom h4 {margin-bottom: 20px; }
+#bottom address { font-style: normal; margin-bottom: 30px; }
+#fnb li { display: inline; padding-left: 15px; margin-left: 5px;}
+#fnb li:first-child { background: none; padding-left: 0; margin-left: 0;}
+#fnb li a:hover {text-decoration: underline; }
+#b_txt { margin-top: 30px; margin-bottom: 100px;}
+
+/* bottom */
+#bottomBar {background: url("../images/index/bar.png");width: 1450px; height: 60px;}

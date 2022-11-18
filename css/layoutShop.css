@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* reset */
+a { text-decoration: none; color: inherit;}
+body {font: normal 12px/1.5em "Noto Serif KR",sans-serif; background: url('../images/cam_bg.jpg') repeat-x left top;}
+
+/* font */
+@font-face{
+    font-family:Noto Serif KR;
+    src:local("Noto Serif KR"),
+        url(../font/NotoSerif/AnyConv.com__NotoSerifKR-Regular.eot),
+        url(../font/NotoSerif/NotoSerifKR-Regular.woff) format("woff"),
+        url(../font/NotoSerif/AnyConv.com__NotoSerifKR-Regular.ttf) format("truetype");
+}
+
+
+/* wrap */
+#wrap { width: 1450px; margin: 10px auto 0;}
+.quick {text-align: right; margin-top: 10px;}
+.quick li { display: inline; margin-right: 20px; font-size: 15px;}
+
+#top h1 { text-align: center; margin-top: 20px;margin-bottom: 40px;}
+
+#gnb {background: url("../images/index/bar.png"); width: 1450px; height: 60px; float: left; margin: 0 auto;}
+#gnb ul { margin-left: 425px;}
+#gnb .sub { display: none;}/* 2단 숨김 */
+#gnb > ul > li { width: 200px; height: 60px; float: left; text-align: center; color: #fff; line-height:57px; position: relative;}/* 1단 li에만 적용 */
+#gnb ul li a { font-size: 17px;  }
+#gnb ul li:hover a { color: rgb(168, 165, 165);}
+#gnb ul li:hover .sub { display: block; position: absolute; padding-top: 0px; background-color: rgba(255,255,255,0.7);}
+
+#gnb ul li .sub1 { width: 510px; left: -380px; }
+#gnb ul li .sub2 {width: 215px; left: -420px;}
+#gnb ul li .sub li {float: left;}/* 2단 수평배치 */
+#gnb ul li .sub li a { font-size: 17px; font-weight: normal;margin-left: 10px; padding: 0 23px; color: #000;}/* 2단 글꼴 */
+#gnb ul li .sub li:hover a {color: rgb(161, 73, 73); font-weight:bold ; text-decoration: underline;}
+
+
+
+
+/* #m_wrap */
+#m_top { width: 100%; overflow: hidden; height: 30px; padding: 20px 0;  }
+.search { float: left; border-bottom: 1px solid rgb(153, 153, 153); overflow: hidden; width: 250px; height: 25px; margin-left: 40px;}
+#search_box { border: none; background-color: transparent; width: 200px; height: 20px;}
+
+.label { float: right; padding-right: 40px; margin-top: 10px;}
+
+#main_shop {margin-left: 40px; margin-top: 80px;width: 1450px;height: 2000px; position: relative; display: block;}
+#main_shop h2 { font-size: 30px; margin-bottom: 50px;}
+#main_shop p { font-size: 25px;}
+#main_shop p:hover {color: rgb(83, 0, 0); text-decoration: underline;}
+#main_shop .tag { font-size: 18px;}
+#main_shop .b1 li{ width:282px ; margin-right: 80px; margin-bottom: 130px;  text-align: center; cursor: pointer; float: left; }
+#main_shop .b1 li p { margin-top: 50px;}
+
+#main_shop .b2 li{ width:282px ; margin-right: 80px; margin-bottom: 130px; text-align: center; cursor: pointer; float: left; }
+#main_shop .b2 li p { margin-top: 50px;}
+
+#main_shop .b3 li{ width:282px ; margin-right: 80px; margin-bottom: 130px; text-align: center; cursor: pointer; float: left; }
+#main_shop .b3 li p { margin-top: 50px;}
+
+
+#num {font-size: 20px; margin-left:580px;}
+#num ul li {margin-left: 30px; text-align: center; float: left;}
+#num ul li:hover {text-decoration: underline; cursor: pointer; font-weight: bold;}
+
+
+
+/* footer */
+#bottom {background-color: rgb(85, 85, 85); text-align: center; width: 1450px; height: 550px; color: rgb(153, 153, 153);}
+#bottom h2 { font-size: 25px; color: #ccc; padding-top: 100px; margin-bottom: 30px; }
+#bottom h4 {padding-top: 20px; margin-bottom: 20px; }
+#bottom address { font-style: normal; margin-bottom: 30px; }
+#fnb li { display: inline; padding-left: 15px; margin-left: 5px;}
+#fnb li:first-child { background: none; padding-left: 0; margin-left: 0;}
+#fnb li a:hover {text-decoration: underline; }
+#b_txt { margin-top: 30px; margin-bottom: 100px;}
+
+
+
+
+
+
+

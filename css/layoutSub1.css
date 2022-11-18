@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* reset */
+a { text-decoration: none; color: #ccc;}
+body {font: normal 12px/1.5em "Noto Serif KR",sans-serif;}
+
+/* font */
+@font-face{
+    font-family:Noto Serif KR;
+    src:local("Noto Serif KR"),
+        url(../font/NotoSerif/AnyConv.com__NotoSerifKR-Regular.eot),
+        url(../font/NotoSerif/NotoSerifKR-Regular.woff) format("woff"),
+        url(../font/NotoSerif/AnyConv.com__NotoSerifKR-Regular.ttf) format("truetype");
+}
+
+
+
+/* bg */
+#bg {width: 1903px; background: url("../images/sub1/back.jpg");}
+/* wrap */
+#wrap { width: 1450px; margin: 10px auto 0; }
+
+.quick {text-align: right;  padding-top: 30px;}
+.quick li { display: inline; margin-right: 20px;}
+
+#top h1 { text-align: center; margin-top: 40px;margin-bottom: 50px;}
+#top p { margin-bottom: 100px;}
+
+
+/* footer */
+
+#bottom {text-align: center; padding-top: 300px;}
+#bottom h4 {margin-bottom: 20px; }
+#bottom address { font-style: normal; margin-bottom: 30px; margin-top: 30px; color: #ccc;}
+#bottom .copy {color: #ccc; padding-bottom: 100px;}
+#b_txt li { display: inline; padding-left: 15px; margin-left: 5px;}
+#b_txt li:first-child { background: none; padding-left: 0; margin-left: 0;}
+#b_txt li a:hover {text-decoration: underline; }
+#b_txt { margin-top: 20px; margin-bottom: 30px;}
